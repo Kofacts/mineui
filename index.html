@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mine Wears - King of custom apparels</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<style type="text/css">
+		/** custom media query **/
+		@media only screen and (max-width: 980px) {
+			.bg_main
+			{
+				background-size: 100% 100% !important;
+				font-size: 3vw !important;
+				height: 400px !important;
+			}
+			#bg_small
+			{
+				font-size: 17px !important;
+			}
+			#bg_big
+			{
+				font-size: 20px !important;
+				line-height: 30px !important;
+			}
+			button#get_started
+			{
+				width: 140px !important;
+				height: 50px !important;
+				font-size: 15px;
+			}
+			.bg_img
+			   {
+			    background-size: 100% 80% !important;
+			    padding-bottom:0px !important;
+			    height: 200px !important;
+			    background-position: 100%  !important;
+			    margin-top:  -50px !important;
+			   }
+		}
+	</style>
+
+	<style>
+		#nav {
+			padding: 20px;
+			text-align: center;
+			position: fixed;
+			height: 100%;
+			top: 0;
+			width: 60%;
+			max-width: 400px;
+			background: black;
+			z-index: 9999;
+			color: white !important;
+			box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+		}
+
+		#nav:not(:target) {
+			left: -100%;
+			transition: left 1.5s;
+		}
+
+		#nav:target {
+			left: 0;
+			transition: left 1s;
+		}
+	</style>
+</head>
+<body>
+
+	<nav id="nav" style="z-index: 9999">
+		<a href="#" aria-label="Close Navigation" style="border-radius: 50px; border:1px solid white; width: 50px; height: 50px;"><i class="fa fa-times" style="height: 50px; width: 50px;"></i></a>
+		
+		<ul>
+			<li><a href="#">Link One</a></li>
+			<li><a href="#">Link Two</a></li>
+			<li><a href="#">Link Three</a></li>
+			<li><a href="#">Link Four</a></li>
+		</ul>
+	</nav>
+
+	<section style="background">
+		<nav class="hidden-lg hidden-md" style="height: 60px">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 pull-left" style="border-right: 2px solid gray; height: 60px">
+						<a href="#nav" style="color: black !important"><i class="fa fa-align-justify" style="font-size: 35px; margin-top: 8px"></i></a>
+					</div>
+
+					<div class="col-sm-8 pull-right">
+						<div class="row">
+							<div class="col-sm-2">
+								<span class="pull-left">
+									<img src="assets/src/_logo.png" style="height: 50px; width: 100px; margin-left: -200px">
+								</span>
+								<span class="pull-right">
+									<i class="fa fa-headphones" style="margin-top: 15px"><br><small>Help</small></i>
+								</span>
+							</div>
+
+							
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+		</nav>
+		<nav class="navbar hidden-xs hidden-sm " style="border-radius:0px !important; border:0px !important">
+	  	 	<div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+		      	<img src="assets/src/_logo.png" style="width: 100px; height: 50px">
+		      </a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      
+		      <ul class="nav navbar-nav navbar-right" style="padding-top: 10px">
+		        <li><a href="#">About</a></li>
+		        <li><a href="#">Contact Us</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Handles <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+	  	 </nav>
+	  	 <div class="container-fluid bg_main" style="background:url('assets/src/mindwears5.png'); height: 70vh; background-size: cover; background-position: center; background-repeat: no-repeat;">
+	  	 	<div class="container" style="padding-top: 100px; color: white">
+	  	 		<span style="font-size: 25px;" id="bg_small">
+	  	 			Welcome to MINE.
+	  	 		</span>
+	  	 		<br>
+	  	 		<h4 id="bg_big" style="font-size: 40px; line-height: 50px">
+	  	 			We help Brands We help brands and businesses <br>gain a Competitive Advantage<br> In the Connected World
+	  	 		</h4>
+	  	 		<br>
+	  	 		<button id="get_started" style="background: #FFF000 ; color: black; outline: 0px; border:0px; height: 60px; width: 200px; font-weight: 600; border-radius: 10px; ">Get Started</button>
+	  	 	</div>
+	  	 </div>
+	</section>
+
+	<section style="background:black">
+		<div class="container">
+			<center>
+				<span style="padding-top: 15px; color: white; font-size: 20px "><br>We are a brand Strategy <br> Design Consultancy </span>
+				<br>
+				<span style="color: white; font-size: 17px">
+					<br>
+					We help business grow, launch products, and build enduring relationships with thieir communities
+					<br>
+				</span>
+				<br>
+			</center>
+		</div>
+	</section>
+
+	<section style="background: #ECECEC !important">
+		<div class="container">
+		<center>	
+			<br>
+			<span style="font-size: 20px">We Produce Delight</span>
+			<br>
+			<span>Below are list of products to choose from<br><br></span>
+		</center>
+
+		<br>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				 <div class="col-sm-12 col-lg-6 bg_img" style="background: url('assets/src/tshirt.jpg'); height: 300px;  background-size: 100% 100%; background-repeat: no-repeat;">
+	                <center>
+	                    <h4 style="color: white; font-weight: 600"><br><br><br><br>T Shirts</h4>
+	                </center>
+            	</div>
+
+            	<div class="col-sm-12 col-lg-6 bg_img" style="background: url('assets/src/hoodie.jpg'); height: 300px;  background-size: 100% 100%; background-repeat: no-repeat;">
+	                <center>
+	                    <h4 style="color: white; font-weight: 600"><br><br><br><br>Hoodie</h4>
+	                </center>
+            	</div>
+
+            	<div class="col-sm-12 col-lg-6 bg_img" style="background: url('assets/src/sweat.jpg'); height: 300px;  background-size: 100% 100%; background-repeat: no-repeat;">
+	                <center>
+	                    <h4 style="color: white; font-weight: 600"><br><br><br><br>Sweat Pants</h4>
+	                </center>
+            	</div>
+
+            	<div class="col-sm-12 col-lg-6 bg_img" style="background: url('assets/src/polo.jpg'); height: 300px;  background-size: 100% 100%; background-repeat: no-repeat;">
+	                <center>
+	                    <h4 style="color: white; font-weight: 600"><br><br><br><br>Polo</h4>
+	                </center>
+            	</div>
+
+            	<div class="col-sm-12 col-lg-6 bg_img" style="background: url('assets/src/jacket.jpg'); height: 300px;  background-size: 100% 100%; background-repeat: no-repeat;">
+	                <center>
+	                    <h4 style="color: white; font-weight: 600"><br><br><br><br>Jackets</h4>
+	                </center>
+            	</div>
+
+            	<div class="col-sm-12 col-lg-6 bg_img" style="background: url('assets/src/track.jpg'); height: 300px;  background-size: 100% 100%; background-repeat: no-repeat;">
+	                <center>
+	                    <h4 style="color: white; font-weight: 600"><br><br><br><br>Track Suit</h4>
+	                </center>
+            	</div>
+			</div>
+
+			<center>
+				<span style="border-bottom: 5px solid black; font-weight: 600; padding-bottom: 5px">VIEW ALL PRODUCTS</span>
+				<br><br>
+			</center>
+		</div>
+	</section>
+
+	<section style="background: #D9D9D9 !important">
+		<div class="container">
+			<center>	
+				<br>
+				<span style="font-size: 20px">Clients</span>
+				
+			</center>
+			<br><br>
+
+			<center>
+				<div class="row">
+				<div class="col-sm-12 col-lg-4">
+					<img src="assets/src/Roar Nigeria - Black Transparent.png" style="width: 100px; height:auto">
+				</div>
+
+				<div class="col-sm-12 col-lg-4">
+					<img src="assets/src/surecar logo black.png" style="width: 100px; height:auto">
+				</div>
+
+				<div class="col-sm-12 col-lg-4">
+					<img src="assets/src/Tentacles Logo Black.png" style="width: 100px; height: auto">
+				</div>
+			</div>
+		</center>
+		</div>
+
+			<center>
+				<br>
+				<span style="border-bottom: 5px solid black; font-weight: 600; padding-bottom: 5px">VIEW ALL PRODUCTS</span>
+				<br><br>
+			</center>
+	</section>
+
+	<section >
+		<div class="container-fluid" style="background: black; color: white; padding-top: 20px; padding-bottom: 20px;">
+		<center>
+			<span style="font-size: 20px">Top Trending Designs</span><br>
+			<span>Below are some of the designs our customers love most</span>
+		</center>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-lg-6">
+					<img src="assets/src/s1.jpg" style="width: 100%;">
+				</div>
+
+				<div class="col-sm-12 col-lg-6">
+					<img src="assets/src/s2.jpg" style="width: 100%">
+				</div>
+
+				<div class="col-sm-12 col-lg-6">
+					<img src="assets/src/s3.jpg" style="width: 100%">
+				</div>
+
+				<div class="col-sm-12 col-lg-6">
+					<img src="assets/src/s5.jpg" style="width: 100%">
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="background: black; color: white; padding-top: 20px; padding-bottom: 20px;">
+		<center>
+			<span style="border-bottom: 5px solid white; font-weight: 600; padding-bottom: 5px; color: white">VIEW ALL PRODUCTS</span>
+		</center>
+		</div>
+	</section>
+
+	<section style="background: #F56800 !important; padding-bottom: 40px">
+		<div class="container">
+			<div class="row" style="margin-top: 40px">
+				<div class="col-sm-12 col-lg-8">
+					<input type="email" name="email" style="height: 50px; border:0px; outline: 0px; width: 100%; padding-left: 20px" placeholder="Sign up for our newsletter">
+				</div>
+				<div class="col-sm-12 col-lg-4">
+					<center><button class="btn btn-primary" style="background: black !important; border-radius: 0px !important; margin-top: 10px; width: 60%; height: 50px; border:0px">Subscribe</button><br></center>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section style="background: black">
+		<div class="container">
+			<div class="row" style="margin-top: 40px; color: white; margin-left:20px; margin-right: 20px; opacity: .7">
+				<div class="col-sm-12">
+					<span class="pull-left">About Us</span> <span class="pull-right">+</span>
+				</div>
+				<br><br>
+				<div class="col-sm-12">
+					<span class="pull-left">Your Account</span> <span class="pull-right">+</span>
+				</div>
+				<br><br>
+				<div class="col-sm-12">
+					<span class="pull-left">Contact Us</span> <span class="pull-right">+</span>
+				</div>
+				<br><br>
+				<div class="col-sm-12">
+					<span class="pull-left">Service Center</span> <span class="pull-right">+</span>
+				</div>
+			</div>
+			<br>
+			<center>
+				<span style="color: white; opacity: .7">Follow Us</span><br>
+				<br>
+				<button>F</button> <button>T</button> <button>I</button>
+			</center>
+			<br>
+			<center>
+				<span style="color: white; opacity: .7">PRIVACY POLICY | USER AGREEMENT</span>
+				<br>
+				<small style="color: white; opacity: .7; font-size: 12px">&copy 2018 MineWears. All right reserved</small>
+			</center>
+		</div>
+	</section>
+
+<footer>
+	<script type="text/javascript" src="assets/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap.min.js"></script>
+</footer>
+</body>
+</html>
